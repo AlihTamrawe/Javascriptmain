@@ -1,35 +1,31 @@
-function fuzzbizz( n)
-{
-    var x=n;
-    if(x>0){
-    for(var i=1;i<=x;i++)
+function turnOff(element) {
+    if(element.innerText=="On")
+    element.innerText = "Off";
+    else
+    if(element.innerText=="Off")
     {
-        if((i%3==0)&&(i%5==0))
-        {
-            console.log("FizzBuzz");
-        } 
-       else
-        if(i%5==0)
-        {
-            console.log("Buzz");
-        }
-        else
-        if(i%3==0)
-        {
-            console.log("Fizz");
-        }
-         else
-        {
-            console.log(i);
-        }
-       
+        element.innerText = "On";
     }
+    
 }
-else
-        {
-            console.log("out of posiytive range");
-        }
+function logun(element)
+{
+    if(element.innerText=="Login"){
+    element.innerText="LogOff";
+} else if(element.innerText=="LogOff")
+    {
+        element.innerText="Login";
+    }
+     
 }
-fuzzbizz(15); 
+var x=0;
+function Like(element)
+{
+   x++;
 
-fuzzbizz(1);
+    element.innerText=x+"Likes";
+
+}
+function hide(element) {
+    element.remove();
+}

@@ -1,3 +1,139 @@
-h1{
-    font-size: 14px;
+
+.cont{
+    width: 70%;
+    height: 100px;
+    position: fixed;
+    top: 2%;
+    display: flex;
+    background-color: rgb(179, 176, 176);
+    left: 100px;
+    justify-items: baseline;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius:12px;
+}   
+
+.cont p{
+   
+    height: 17px;
+    width:40px;
+    font-size: 20px;
+    
+
+}
+.cont button
+{
+    height: 45px;
+    width:70px;
+    border-radius:10px;
+    background-color: rgb(82, 82, 241);
+}
+.cont  input 
+{
+    height: 45px;
+    width:180px;
+    border-radius:10px;
+}
+
+.plate1
+{
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:10px;
+    width: 100%;
+    height: 70%;
+    top: 28%;
+}
+.column1
+{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.profile1
+{
+    display: flex;
+    border: 1px solid black;
+    width: 490px;
+    height: 190PX;
+    margin: 10px;
+
+}
+
+.profile3 button
+{
+    width: 110px;
+    height: 40px;
+    flex-direction: row;
+    align-self: end;
+    margin-bottom:20px;
+    margin-left:10px ;
+}
+.profile1 button 
+{
+    width: 110px;
+    height: 40px;
+    flex-direction: row;
+    align-self: end;
+    margin-bottom:20px;
+    margin-left:10px ;
+}
+.profile2
+{
+    margin: 10px;
+    border: 1px solid black;
+    width: 490px;
+    height: 130PX;
+    margin: 10px;
+    padding-left: 20px;
+}
+.profile2 button 
+{
+    background-color: chartreuse;
+    border: 2px solid black;
+    width: 170px;
+    height: 40px;
+    flex-direction: row;
+    align-self: end;
+    margin-bottom:20px;
+    margin-left:10px ;
+    text-align: center;
+}
+.profile2 p 
+{
+    
+  font-size: 20px;
+  font-style:italic;
+}
+
+.profile3
+{
+    border: 1px solid black;
+    width: 490px;
+    height: 190PX;
+    display: flex;
+    margin: 10px;
+ 
+}
+ 
+.profile4
+{
+    display: flex;
+    width: 490px;
+    height: 190PX;
+    margin: 10px;
+}
+ 
+
+
+body
+{
+    display: flex  ;
+    padding: 0px;
+    margin:0px;
 }
