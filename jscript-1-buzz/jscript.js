@@ -30,4 +30,6 @@ else
             console.log("out of posiytive range")
         }
 }
-fuzzbizz(10);
+fuzzbizz(10); 
+
+fuzzbizz(1);
