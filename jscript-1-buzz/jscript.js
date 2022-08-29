@@ -8,8 +8,7 @@ function fuzzbizz( n)
         {
             console.log("FizzBuzz");
         } 
-       else
-        if(i%5==0)
+       else if(i%5==0)
         {
             console.log("Buzz");
         }
@@ -27,9 +26,9 @@ function fuzzbizz( n)
 }
 else
         {
-            console.log("out of posiytive range");
+            console.log("out of positive range");
         }
 }
-fuzzbizz(15); 
+fuzzbizz(101); 
 
 fuzzbizz(1);
