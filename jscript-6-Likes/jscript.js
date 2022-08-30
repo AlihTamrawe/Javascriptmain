@@ -21,3 +21,8 @@ function hide(element) {
     
 
 }
+function phcan()
+{
+    var c = document.getElementById('k2');
+        c.setAttribute(src,'todd-s.jpg');
+}

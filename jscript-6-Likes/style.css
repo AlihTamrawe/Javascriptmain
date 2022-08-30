@@ -8,6 +8,7 @@
     background-color: rgb(179, 176, 176);
     left: 100px;
     justify-items: baseline;
+    justify-self: center;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
@@ -22,13 +23,7 @@
     
 
 }
-.cont button
-{
-    height: 45px;
-    width:70px;
-    border-radius:10px;
-    background-color: rgb(82, 82, 241);
-}
+
 .cont  input 
 {
     height: 45px;
@@ -111,12 +106,21 @@
     
     border: 1px solid black;
     width: 220px;
-    height: 420pX;
+    height: 400pX;
     display: flex;
     flex-direction: column;
     margin: 10px;
     justify-self: start;
     align-self: start;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    
+}
+.col-plate a 
+{
+    text-decoration: underline;
+    color: cornflowerblue;
 }
 
 body
@@ -124,4 +128,14 @@ body
     display: flex  ;
     padding: 0px;
     margin:0px;
+}
+
+
+.midd{
+    display: flex;
+    position: absolute; 
+    top:17%;
+    left: 40%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-self:center;
 }
