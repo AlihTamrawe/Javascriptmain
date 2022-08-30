@@ -1,4 +1,4 @@
-function turnOff(element) {
+/*function turnOff(element) {
     if(element.innerText=="On")
     element.innerText = "Off";
     else
@@ -7,13 +7,15 @@ function turnOff(element) {
         element.innerText = "On";
     }
     
-}
+}*/
 function logun(element)
 {
     if(element.innerText=="Login"){
     element.innerText="LogOff";
 } else if(element.innerText=="LogOff")
     {
+        d=0;x=0
+        alert("logout");
         element.innerText="Login";
     }
      

@@ -1,139 +1,125 @@
-
-.cont{
-    width: 70%;
-    height: 100px;
-    position: fixed;
-    top: 2%;
-    display: flex;
-    background-color: rgb(179, 176, 176);
-    left: 100px;
-    justify-items: baseline;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    border-radius:12px;
-}   
-
-.cont p{
-   
-    height: 17px;
-    width:40px;
-    font-size: 20px;
-    
-
-}
-.cont button
-{
-    height: 45px;
-    width:70px;
-    border-radius:10px;
-    background-color: rgb(82, 82, 241);
-}
-.cont  input 
-{
-    height: 45px;
-    width:180px;
-    border-radius:10px;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.plate1
-{
-    position: absolute;
+body {
+    background-color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+}
 
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding:10px;
+.top {
+    background-color: #333;
+    height: 75px;
+    border-top: 5px solid rebeccapurple;
+    color: #fff;
+}
+
+.search {
+    padding: 5px 10px;
+    font-size: 1.2rem;
     width: 100%;
-    height: 70%;
-    top: 28%;
-}
-.column1
-{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-.profile1
-{
-    display: flex;
-    border: 1px solid black;
-    width: 490px;
-    height: 190PX;
-    margin: 10px;
-
+    margin: 0 100px;
 }
 
-.profile3 button
-{
-    width: 110px;
+.btn {
+    background-color: rebeccapurple;
+    color: #fff;
+    width: 120px;
     height: 40px;
-    flex-direction: row;
-    align-self: end;
-    margin-bottom:20px;
-    margin-left:10px ;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    font-size: 1rem;
+    cursor: pointer;
 }
-.profile1 button 
-{
-    width: 110px;
-    height: 40px;
-    flex-direction: row;
-    align-self: end;
-    margin-bottom:20px;
-    margin-left:10px ;
+
+.nav-container, .flex-container {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
 }
-.profile2
-{
-    margin: 10px;
-    border: 1px solid black;
-    width: 490px;
-    height: 130PX;
-    margin: 10px;
-    padding-left: 20px;
+
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
 }
-.profile2 button 
-{
-    background-color: chartreuse;
-    border: 2px solid black;
+
+.flex-container {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.col-l {
+    flex: 2;
+}
+
+.col-r {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.placeholder {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.placeholder svg {
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.user {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.start h1 {
+    margin-bottom: 10px;
+}
+
+.start h3 {
+    color: #333;
+    font-weight: 400;
+}
+
+.avatar-s {
+    height: 64px;
+}
+
+.user-name {
+    margin-left: 10px;
+    color: rebeccapurple;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.sub-header {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #999;
+}
+
+.video-small {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.vid-s {
     width: 170px;
-    height: 40px;
-    flex-direction: row;
-    align-self: end;
-    margin-bottom:20px;
-    margin-left:10px ;
-    text-align: center;
-}
-.profile2 p 
-{
-    
-  font-size: 20px;
-  font-style:italic;
+    margin-right: 10px;
 }
 
-.profile3
-{
-    border: 1px solid black;
-    width: 490px;
-    height: 190PX;
-    display: flex;
-    margin: 10px;
- 
-}
- 
-.profile4
-{
-    display: flex;
-    width: 490px;
-    height: 190PX;
-    margin: 10px;
-}
- 
-
-
-body
-{
-    display: flex  ;
-    padding: 0px;
-    margin:0px;
+.video-title {
+    font-size: 1.2rem;
+    font-weight: 900;
 }

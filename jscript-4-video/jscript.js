@@ -40,3 +40,6 @@ function hide(element) {
     
 
 }
+
+
+var z = document.getElementById("myVideo");
