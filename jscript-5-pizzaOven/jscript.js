@@ -60,23 +60,31 @@ var pizza = {
 
 function PizzaOven(crustType, sauceType, cheeses, toppings) {
     var pizza = {};
-
-    pizza.crustType = crustType;
-    pizza.sauceType = sauceType;
-    pizza.cheeses = cheeses;
-    pizza.toppings = toppings;
+    var i= parseInt(Math.random()*3) ;
+    var i2= parseInt(Math.random()*2) ;
+    pizza.crustType = crustType[i];
+    pizza.sauceType = sauceType[i];
+    pizza.cheeses = cheeses[i2];
+    pizza.toppings = toppings[i2];
     return pizza;
 }
-var  allp = [];
-allp.push(pizza)
+
+
+var  crustType = ["hand tossed","natural tossed","deep dish"];
+var  sauceType = ["marinara","Amic","traditiona","mazzarony","tuna"];
+var  cheeses = [["mozzarella", "feta"],["mozzarella", "tomato"]];
+var toppings = [["mushrooms", "olives", "onions"], ["mushrooms", "pinaple", "hotdog"]];
+
 console.log(pizza);
-pizza = PizzaOven("hand tossed", "marinara", ["mozzarella", "feta"],  ["mushrooms", "olives", "onions"]);
+pizza = PizzaOven(crustType,sauceType,cheeses,toppings);
 console.log(pizza);
-allp.push(pizza)
-pizza = PizzaOven("natural tossed", "Amic", ["mozzarella", "tomato"],  ["mushrooms", "pinaple", "hotdog"]);
+
+pizza = PizzaOven(crustType,sauceType,cheeses,toppings);
    
 console.log(pizza);
-allp.push(pizza)
+pizza = PizzaOven(crustType,sauceType,cheeses,toppings);
+   
+console.log(pizza);
 
 
 

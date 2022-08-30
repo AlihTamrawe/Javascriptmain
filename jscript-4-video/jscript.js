@@ -63,8 +63,9 @@ function hide(element) {
   element.pause();
   }
     function play1()
-    {var video = document.getElementById('myvid');
-        
+    {
+        var video = document.getElementById('myvid');
+    
     video.setAttribute("src", 'assets/ve1.mp4');
     video.autoplay = true;
     video.load();
@@ -102,5 +103,11 @@ function hide(element) {
         video.autoplay = true;
         video.load();
      //   document.getElementById('myvid').innerHTML="<source src='assets/ve5.mp4' type='video/mp4'>";
+    }
+    function doi()
+    {
+        setTimeout(myFunction, 3000);
+        
+        play1();
     }
 
