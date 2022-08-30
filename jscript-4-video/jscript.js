@@ -95,4 +95,3 @@ function hide(element) {
      //   document.getElementById('myvid').innerHTML="<source src='assets/ve5.mp4' type='video/mp4'>";
     }
 
-var z = document.getElementById("myVideo");
