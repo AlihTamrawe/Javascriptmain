@@ -1,4 +1,4 @@
-function turnOff(element) {
+/*function turnOff(element) {
     if(element.innerText=="On")
     element.innerText = "Off";
     else
@@ -50,10 +50,19 @@ function hide(element) {
     setTimeout(1000);
     
 
-}
+}*/
 
  var video = document.getElementById('myvid');
-    function play()
+  function pla(element)
+  {
+    element.play();
+  }
+  function pu(element)
+  { 
+        
+  element.pause();
+  }
+    function play1()
     {var video = document.getElementById('myvid');
         
     video.setAttribute("src", 'assets/ve1.mp4');
