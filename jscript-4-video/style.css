@@ -59,12 +59,12 @@ body {
     margin-left: 20px;
 }
 
-.placeholder {
+#myvid {
     margin-bottom: 20px;
     width: 100%;
 }
 
-.placeholder svg {
+#myvid svg {
     border-radius: 10px;
 }
 
