@@ -18,7 +18,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#" class="active">My Profile</a></li>
                 <li><a href="#">Find Connections</a></li>
-                <li><button class="btn">Sign Out</button></li>
+                <li><button class="btn" onclick="hide_main(this)">Sign Out</button></li>
             </ul>
         </div>
     </div>
@@ -32,14 +32,14 @@
             <!-- user info card -->
             <div class="card user-card">
                 <div class="card-header">
-                    <img src="images/jane-m.jpg" alt="jane" class="avatar-m">
+                    <img id="pic-change"  src="images/jane-m.jpg" alt="jane" class="avatar-m">
                 </div>
                 <div class="card-body">
                     <h1>Jane Doe</h1>
                     <h3><img src="icons/map-marker.png" alt="pin" class="icon-s"> Seattle</h3>
                     <p>Developer | Engineer | Problem Solver<br>
                     Master of shadows and the Internet!</p>
-                    <p><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
+                    <p><a href="#" onclick="change_pic()"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
                 </div>
             </div>
 
@@ -73,8 +73,8 @@
                             Todd E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick="add_conn()">
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick="remove_conn()">
                         </span>
                     </li>
                     <li class="card-list-item">
