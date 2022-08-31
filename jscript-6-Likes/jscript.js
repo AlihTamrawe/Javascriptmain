@@ -1,12 +1,46 @@
 
-var x=0;
-function Like(element)
+
+var f1=0,f2=0,f3=0;
+function Like(cv)
 {
-   x++;
-        alert("the ninja was clicked :"+x);
-    element.innerText=x+"Likes";
+    var t1 = document.querySelector("#t1");
+
+      t1.innerText=f1+"Likes";
+      f1++;
+ 
+     
+    
+ 
 
 }
+function Like2(cv)
+{
+    var t1 = document.querySelector("#t2");
+
+  
+        t1.innerText=f2+"Likes";
+        f2++;
+     
+       
+   
+    
+ 
+
+}
+function Like3(cv)
+{
+    var t1 = document.querySelector("#t3");
+
+   
+     
+        t1.innerText=f3+"Likes";
+        f3++;
+   
+    
+ 
+
+}
+/*
 var d=0;
 function Likes(element)
 {
@@ -20,9 +54,13 @@ function hide(element) {
     setTimeout(1000);
     
 
-}
-function phcan()
+}*/
+
+
+
+function switchImg() 
 {
-    var c = document.getElementById('k2');
-        c.setAttribute(src,'todd-s.jpg');
+    var h4 = document.querySelector("#lil2"); 
+     
+    h4.src="todd-s.jpg";
 }

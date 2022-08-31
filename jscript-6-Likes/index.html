@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click</title>
-    <link rel="stylesheet" href="style.css">
-    <script  src="jscript.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Click</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jscript.js"></script>
 </head>
-        <body>
-      
 
-        <div class="cont" >
-                <p>Network</p>
-        </div>
-           <div class="midd"><h1>Your Feed</h1></div>  
-                <div class="plate1">
-                        <div class="col-plate">
-                                <img id='k2' src="user-circle.png" alt="" width="60px" height="60px">
-                                <a href="#" onclick="phcan()">Add an avatar</a>
-                                <h3>James Does</h3>
+<body>
+        <header>
+                <h1>Network</h1>
+                <h2>Your Feed</h2>
+        </header>
+        <main>
+                <div class="avatar">
+                        <img id="lil2" src="user-circle.png" alt="sss" width="60px" height="60px">
+                        <h4 onclick="switchImg()" style="text-decoration: underline; color: cornflowerblue;">Add an avatar</h4>
+                        <h3>James Does</h3>
+                </div>
+                <div class="feeds">
+                        <div class="feed">
+                                <section>
+                                        <p>Neil M</p>
+                                        <p id="t1">Like(s)</p>
+                                        <button onclick="Like()">Likes</button>
+                                </section>
+                                <p>I just set up this new discord, let me know what 
+                                        you all think <a href="#">link</a>
+                                </p>
+                        </div>
 
+                        <div class="feed">
+                                <section>
+                                        <p>Nichole K</p>
+                                        <p id="t2">Like(s)</p>
+                                        <button onclick="Like2()">Likes</button>
+                                </section>
+                                <p>just finished my<a href="#">next comic</a> , check it out  </p>
                         </div>
-                        <div class="column1">
-                        <div class="profile1">
-                                <p>Dojonary is <br>defindby YOU</p>
-                                        <button onclick="hide(this)">Likes</button>
+
+                        <div class="feed">
+                                <section>
+                                        <p>Jim R</p>
+                                        <p id="t3">Like(s)</p>
+                                        <button onclick="Like3()">Likes</button>
+                                </section>
+                                <p>I can't stop listening to the <a href="#">new album</a> who else is liking it?
+                                </p>
                         </div>
-                                <div  class="profile3"> 
-                                        <p>Dojonary is <br>defindby YOU</p>
-                                        <button onclick="hide(this)">Likes</button>
-                                         </div> 
-                                <div  class="profile3"> 
-                                        <p>Dojonary is <br>defindby YOU</p>
-                                        <button onclick="hide(this)">Likes</button>
-                                </div> 
-                        </div>
-                                        
-                 
+
              
+                        </div>
+                </div>
+        </main>
+</body>
 
-
-
-
-
-
-
-
-                
-        </body>
 </html>
-
