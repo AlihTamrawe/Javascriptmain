@@ -3,7 +3,7 @@ console.log("page loaded...");
 
 function change_pic(){
         var pic=document.querySelector("#pic-change");
-        pic.src="images/anne-s.jpg";
+        pic.innerText="Ali Tamrawe"
 } 
 
 
@@ -27,11 +27,44 @@ function hide_main(element)
 
 }
 var c =2;
-var c_string;
-function add_conn()
+var c2=500;
+function add_conn(e)
 {
-    var conn = document.querySelector('.badge');
+    var show_profile = document.querySelector('.prof1');
+    var show_profile2 = document.querySelector('.prof2');
+    var conn = document.querySelector('.b1');
+    var vconn = document.querySelector('.b2')
+    if(e==1){
     c--;
-    c_string+=c;
-    conn.innerText=c_string;
+    c2++;
+    conn.innerText=c;
+    vconn.innerText=c2;
+    show_profile.remove()
+        }else
+        {
+            c--;
+    conn.innerText=c;
+    c2++;
+    vconn.innerText=c2;
+    show_profile2.remove()
+        }
+
+}
+function remove_conn(e)
+{
+    var show_profile = document.querySelector('.prof1');
+    var show_profile2 = document.querySelector('.prof2');
+    var conn = document.querySelector('.b1');
+    var vconn = document.querySelector('.b2')
+    if(e==1){
+    c--;
+    conn.innerText=c;
+    show_profile.remove()
+        }else
+        {
+            c--;
+    conn.innerText=c;
+    show_profile2.remove()
+        }
+
 }
