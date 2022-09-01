@@ -83,3 +83,15 @@ button#equals
     
 
 }
+
+#equals:hover {
+    transition: 0.5s;
+    -webkit-transform: translate(0, 6px);
+
+}
+
+#clear:hover {
+    transition: 0.5s;
+    -webkit-transform: translate(0, 6px);
+
+}
