@@ -12,9 +12,9 @@
         <header>
                 <h1>Dojo Weather</h1>
                 <section>
-                        <h3>Burbank</h3>
-                        <h3>Chicago</h3>
-                        <h3>Dallas</h3>
+                        <h3 onclick="change_weather(1)">Burbank</h3>
+                        <h3 onclick="change_weather(2)">Chicago</h3>
+                        <h3 onclick="change_weather(3)">Dallas</h3>
                 </section>
         </header>
 
@@ -23,9 +23,9 @@
                         <section>
                                 <h2 id="city_name">San Jose</h2>
                                 <p>show temp in</p>
-                                <select>
-                                        <option>°C</option>
-                                        <option>°F</option>
+                                <select id="selection_o" onchange="done()">
+                                        <option name="c" value="c">°C</option>
+                                        <option name="f" value="f" >°F</option>
 
                                 </select>
                         </section>
@@ -40,26 +40,26 @@
                                 <h3>Today</h3>
                                 <img src="assets/some_rain.png" alt="">
                                 <p>Some rain</p>
-                                <div class="degree"><h4 style="color: red;">26°</h4><h4 style="color:blue">21°</h4></div>
+                                <div class="degree"><h4 id="high1" style="color: red;">32°</h4><h4 id="low1" style="color:blue">20°</h4></div>
 
                         </div>
                         <div class="day">
                                 <h3>Tomorrow</h3>
                                 <img src="assets/some_sun.png" alt="">
                                 <p>some sun</p>
-                                <div class="degree"><h4 style="color: red;">26°</h4><h4 style="color:blue">21°</h4></div>
+                                <div class="degree"><h4  id="high2" style="color: red;">29°</h4><h4 id="low2"  style="color:blue">23°</h4></div>
                         </div>
                         <div class="day">
                                 <h3>Friday</h3>
                                 <img src="assets/some_clouds.png" alt="">
                                 <p>some clouds</p>
-                                <div class="degree"><h4 style="color: red;">26°</h4><h4 style="color:blue">21°</h4></div>
+                                <div class="degree"><h4  id="high3" style="color: red;">34°</h4><h4 id="low3" style="color:blue">25°</h4></div>
                         </div>
                         <div class="day">
                                 <h3>Saturday</h3>
                                 <img src="assets/some_sun.png" alt="">
                                 <p>some sun</p>
-                                <div class="degree"><h4 style="color: red;">26°</h4><h4 style="color:blue">21°</h4></div>
+                                <div class="degree"><h4  id="high4" style="color: red;">37°</h4><h4 id="low4" style="color:blue">22°</h4></div>
                         </div>  
                 </div>
 
@@ -69,7 +69,7 @@
                                 <h4>Stop !Cookies me!</h4>
                                 <p>we use the Cookies (sadly not the editable ones) to personlize content and ads, to provide socail media features and to analyse our trafic <a href="#">Read me</a></p>
                         </section>
-                        <button id="but_accept">I Accept</button>
+                        <button onclick="remove1()" id="but_accept">I Accept</button>
                 </div>
         </main>
                 
