@@ -10,7 +10,7 @@ function setOP(op)
     var displayDiv = document.querySelector("#display");
     operator=op;
     flag=1;
-    displayDiv.innerText=h;
+   // displayDiv.innerText=h;
 }
 function press(x)
 {
@@ -28,17 +28,29 @@ function press(x)
 }
 
 function calculate(){
+   
         var result=0.0; 
          var displayDiv = document.querySelector("#display");
     if(operator=='/')
     {
-      
+        if(parseFloat(num1)!=null||parseFloat(num2)!=null){
         result=parseFloat(num1)/parseFloat(num2);
         displayDiv.innerText =result;
+    }
+    else
+    {
+        alert("entered zero")
+    }
     }else if(operator=='*'){
-        
-        result=parseFloat(num1)*parseFloat(num2);
-        displayDiv.innerText =result;
+        if(parseFloat(num1)!=null||parseFloat(num2)!=null){
+            result=parseFloat(num1)*parseFloat(num2);
+            displayDiv.innerText =result;
+        }
+        else
+        {
+            alert("entered zero")
+        }
+       
 
     }else if(operator=='-')
     {
@@ -52,7 +64,7 @@ function calculate(){
         displayDiv.innerText =result;
 
     }
-
+    
 }
  function clr()
  {

@@ -83,6 +83,16 @@ button#equals
     
 
 }
+button.row :hover {
+    transition: 0.5s;
+    -webkit-transform: translate(0, 6px);
+
+}
+button.operator :hover {
+    transition: 0.5s;
+    -webkit-transform: translate(0, 6px);
+
+}
 
 #equals:hover {
     transition: 0.5s;
