@@ -4,32 +4,57 @@ function getSecondsSinceStartOfDay() {
       new Date().getHours() * 3600;
   }
       
-setInterval( function() {
-        var time = getSecondsSinceStartOfDay();
-        console.log(time);
-      // your code here
-    }, 1000);
 
-   var s=1,m=0,h=0;
+
+   var s=359,m=255,h=125;
+
+
+   var st = "rotate(6deg)";
+  
+  
 function move()
 {
     
-    var st = "rotate(6deg)";
-    var hour = document.getElementById("hour");
-    var minutes = document.getElementById("minutes");
-    var seconds = document.getElementById("seconds");
- 
+   
+    setInterval( function() { 
+        var hour = document.getElementById("hour");
+        var minute = document.getElementById("minutes");
+        
+        let second = document.querySelector('#seconds');
+        var time = getSecondsSinceStartOfDay();
+        console.log(time);
+        second.style.msTransform = "rotate("+s+"deg)"; 
+        // Standard syntax
+        second.style.transform = "rotate("+s+"deg)"; 
+        s+=1;
+        if(s>=359){
+            s=1;
+            console.log("jjjjj");
+            minutes.style.msTransform = "rotate("+m+"deg)"; 
+            // Standard syntax
+            minute.style.transform = "rotate("+m+"deg)"; 
+            if(m>=359)
+            {
+                m+=20;
+            hour.style.msTransform = "rotate("+h+"deg)"; 
+            // Standard syntax
+            hour.style.transform = "rotate("+h+"deg)"; 
+            }
+            if(h>=359)
+            {
+                h=1;
+            }
+       }
+   
+        console.log("hi");
+    }, 1000);
     
      
-        console.log("hi");
-        seconds.style.msTransform= "rotate("+s+"deg)"; ; 
-        // Standard syntax
-        seconds.style.transform = "rotate("+s+"deg)"; 
-    s++;
-    if(s>359){
-         s=1;
-    }
-
+       
+       
+       
+   
+   
     console.log("hi");
 
     }
@@ -40,4 +65,4 @@ function move()
 
 
    
-    setInterval(move());
+move();
