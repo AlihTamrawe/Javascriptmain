@@ -26,9 +26,9 @@ function move()
         second.style.msTransform = "rotate("+s+"deg)"; 
         // Standard syntax
         second.style.transform = "rotate("+s+"deg)"; 
-        s+=1;
+        s+=6;
         if(s==360){
-            m+=1;
+            m+=6;
             s=0;
             console.log("jjjjj");
             minutes.style.msTransform = "rotate("+m+"deg)"; 
@@ -38,7 +38,7 @@ function move()
             {
                 m=0;
                 console.log(s);
-                h+=1;
+                h+=30;
             hour.style.msTransform = "rotate("+h+"deg)"; 
             // Standard syntax
             hour.style.transform = "rotate("+h+"deg)"; 
