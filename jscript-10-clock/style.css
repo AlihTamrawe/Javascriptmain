@@ -18,13 +18,14 @@
     background-color: red;
     height: 130px;
     width: 2px;
+    transform: rotate(100deg);
   }
       
   #hour {
     background-color: black;
     height: 100px;
     width: 8px;
-    transform: rotate(125deg);
+    transform: rotate(110deg);
   }
       
   #minutes {
