@@ -6,7 +6,7 @@ function getSecondsSinceStartOfDay() {
       
 
 
-   var s=359,m=255,h=125;
+   var s=0,m=0,h=0;
 
 
    var st = "rotate(6deg)";
@@ -22,27 +22,32 @@ function move()
         
         let second = document.querySelector('#seconds');
         var time = getSecondsSinceStartOfDay();
-        console.log(time);
+        console.log(s);
         second.style.msTransform = "rotate("+s+"deg)"; 
         // Standard syntax
         second.style.transform = "rotate("+s+"deg)"; 
         s+=1;
-        if(s>=359){
-            s=1;
+        if(s==360){
+            m+=1;
+            s=0;
             console.log("jjjjj");
             minutes.style.msTransform = "rotate("+m+"deg)"; 
             // Standard syntax
             minute.style.transform = "rotate("+m+"deg)"; 
-            if(m>=359)
+            if(m>=360)
             {
-                m+=20;
+                m=0;
+                console.log(s);
+                h+=1;
             hour.style.msTransform = "rotate("+h+"deg)"; 
             // Standard syntax
             hour.style.transform = "rotate("+h+"deg)"; 
             }
             if(h>=359)
             {
+                m=0;
                 h=1;
+
             }
        }
    
