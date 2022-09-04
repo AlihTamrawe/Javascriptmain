@@ -22,7 +22,7 @@ function move()
         
         let second = document.querySelector('#seconds');
         var time = getSecondsSinceStartOfDay();
-        console.log(s);
+        console.log("second : "+s/6);
         second.style.msTransform = "rotate("+s+"deg)"; 
         // Standard syntax
         second.style.transform = "rotate("+s+"deg)"; 
@@ -30,14 +30,14 @@ function move()
         if(s==360){
             m+=6;
             s=0;
-            console.log("jjjjj");
+            console.log("minutesm : "+m/6);
             minutes.style.msTransform = "rotate("+m+"deg)"; 
             // Standard syntax
             minute.style.transform = "rotate("+m+"deg)"; 
             if(m>=360)
             {
                 m=0;
-                console.log(s);
+                 
                 h+=30;
             hour.style.msTransform = "rotate("+h+"deg)"; 
             // Standard syntax
@@ -51,7 +51,7 @@ function move()
             }
        }
    
-        console.log("hi");
+     
     }, 1000);
     
      
@@ -60,7 +60,7 @@ function move()
        
    
    
-    console.log("hi");
+  
 
     }
    
