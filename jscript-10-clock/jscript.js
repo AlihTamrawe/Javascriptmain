@@ -11,16 +11,19 @@ function getSecondsSinceStartOfDay() {
 
    var st = "rotate(6deg)";
   
-  
+   var hour = document.getElementById("hour");
+        var minute = document.getElementById("minutes");
+        
+        let second = document.querySelector('#seconds'); 
+        console.log(st);
+        console.log(hour,minute,second);
+
 function move()
 {
     
    
     setInterval( function() { 
-        var hour = document.getElementById("hour");
-        var minute = document.getElementById("minutes");
         
-        let second = document.querySelector('#seconds');
         var time = getSecondsSinceStartOfDay();
         console.log("second : "+s/6);
         second.style.msTransform = "rotate("+s+"deg)"; 
