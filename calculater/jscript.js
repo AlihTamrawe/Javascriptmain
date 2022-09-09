@@ -1,29 +1,31 @@
 
 var operator = "";
-var h ="0";
-var num1 = "";
-var num2 = "";
-var flag=0;
+ 
+var First_number = "";
+var Second_number = "";
+var switcheflag=0;
 
-function setOP(op)
+function setOP(operantes)
 {
     var displayDiv = document.querySelector("#display");
-    operator=op;
-    flag=1;
+    operator=operantes;
+    switcheflag=1;
    // displayDiv.innerText=h;
 }
+
+
 function press(x)
 {
     var displayDiv = document.querySelector("#display");
-    if(flag==0)
+    if(switcheflag==0)
     {
-        num1+=x;
-        console.log(num1);
-        displayDiv.innerText=num1;
+        First_number+=x;
+        console.log(First_number);
+        displayDiv.innerText=First_number;
     }
     else{
-        num2+=x;
-        displayDiv.innerText=num2;
+        Second_number+=x;
+        displayDiv.innerText=Second_number;
     }
 }
 
@@ -33,8 +35,8 @@ function calculate(){
          var displayDiv = document.querySelector("#display");
     if(operator=='/')
     {
-        if(parseFloat(num1)!=null||parseFloat(num2)!=null){
-        result=parseFloat(num1)/parseFloat(num2);
+        if(parseFloat(First_number)!=null||parseFloat(Second_number)!=null){
+        result=parseFloat(First_number)/parseFloat(Second_number);
         displayDiv.innerText =result;
     }
     else
@@ -42,8 +44,8 @@ function calculate(){
         alert("entered zero")
     }
     }else if(operator=='*'){
-        if(parseFloat(num1)!=null||parseFloat(num2)!=null){
-            result=parseFloat(num1)*parseFloat(num2);
+        if(parseFloat(First_number)!=null||parseFloat(Second_number)!=null){
+            result=parseFloat(First_number)*parseFloat(Second_number);
             displayDiv.innerText =result;
         }
         else
@@ -55,12 +57,12 @@ function calculate(){
     }else if(operator=='-')
     {
         
-        result=parseFloat(num1)-parseFloat(num2);
+        result=parseFloat(First_number)-parseFloat(Second_number);
         displayDiv.innerText =result;
 
     }else if(operator=='+'){
         
-        result=parseFloat(num1)+parseFloat(num2);
+        result=parseFloat(First_number)+parseFloat(Second_number);
         displayDiv.innerText =result;
 
     }
@@ -70,8 +72,8 @@ function calculate(){
  {
     var displayDiv = document.querySelector("#display");
     displayDiv.innerText='0';
-    num1="";
-    num2="";
-    flag=0;
+    First_number="";
+    Second_number="";
+    switcheflag=0;
  }
 
